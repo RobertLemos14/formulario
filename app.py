@@ -20,14 +20,14 @@ def home():
         largura = formulario.largura.data
         altura = formulario.altura.data
         tipoCortina = formulario.tipoCortina.Data
-      #  preco = 0
-       # if(tipoCortina == "oxford"):
-    #        preco = 83
-    #    if(tipoCortina == "tergal"):
-    #        preco = 62
-     #   if(tipoCortina == "gabardine"):
-      #      preco = 105
-      #  metros = altura * largura
-       # valor = preco * metros
+        preco = 0
+        if(tipoCortina == "oxford"):
+            preco = 83
+        if(tipoCortina == "tergal"):
+            preco = 62
+        if(tipoCortina == "gabardine"):
+            preco = 105
+        metros = altura * largura
+        valor = preco * metros
         return "Largura: " + str(largura) +" Altura: " + str(altura) + " Tipo de Curtina " + str(tipoCortina) + str(valor)
     return render_template('home.html', form=formulario)
